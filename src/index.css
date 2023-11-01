@@ -1,0 +1,1202 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul li{
+    list-style: none;
+}
+
+Link{
+    text-decoration: none;
+}
+
+
+a{
+    text-decoration: none;
+}
+
+/* Стилизация полосы прокрутки */
+/* Общие стили */
+::-webkit-scrollbar {
+    width: 3px; /* Ширина вертикальной полосы прокрутки */
+    height: 5px; /* Высота горизонтальной полосы прокрутки */
+}
+
+/* Стиль полосы прокрутки */
+::-webkit-scrollbar-thumb {
+    background-color: #28b409; /* Цвет полосы прокрутки */
+    border-radius: 5px; /* Скругление углов полосы прокрутки */
+}
+
+/* Стиль фона полосы прокрутки */
+::-webkit-scrollbar-track {
+    background-color: #f1f1f1; /* Цвет фона полосы прокрутки */
+}
+
+/* Стиль кнопок стрелок (при необходимости) */
+::-webkit-scrollbar-button {
+    display: none; /* Скрываем кнопки стрелок */
+}
+
+/* Стилизация горизонтальной полосы прокрутки (при необходимости) */
+::-webkit-scrollbar-horizontal {
+    display: none; /* Скрываем горизонтальную полосу прокрутки */
+}
+
+/* Стилизация горизонтальной полосы прокрутки (при необходимости) */
+::-webkit-scrollbar-vertical {
+    display: none; /* Скрываем вертикальную полосу прокрутки */
+}
+
+
+code {
+    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.load {
+    margin: 50px;
+}
+
+body {
+    background-color: #E8E8E8;
+}
+
+.load p {
+    margin: 10px;
+    color: #9aafa8;
+}
+
+.continer {
+    margin: 0 auto;
+    max-width: 1230px;
+    padding: 0 15px;
+    margin-bottom: 50px;
+}
+
+.newStyle_container {
+    border-radius: 8px;
+    background: #FFF;
+    margin: 20px 20px;
+    padding: 18px 15px;
+    box-shadow: 1px 1px 20px 20px #e8e8e863;
+
+}
+
+
+.newStyle_select {
+    margin-bottom: 10px;
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    line-height: 1.4;
+    color: #333;
+    transition: border-color 0.2s;
+    background: transparent;
+}
+
+/* Наведение курсора на <select> */
+.newStyle_select:hover {
+    border-color: #666;
+}
+
+/* Фокус на <select> */
+.newStyle_select:focus {
+    border-color: #007bff;
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+/* Дополнительный стиль для <select> с ошибкой */
+.newStyle_select.error {
+    border-color: #ff0000;
+}
+
+/* Пользовательский скроллбар (поддерживается в некоторых браузерах) */
+.newStyle_select::-webkit-scrollbar {
+    width: 12px;
+}
+
+.newStyle_select::-webkit-scrollbar-thumb {
+    background-color: #007bff;
+    border-radius: 10px;
+}
+
+.newStyle_select::-webkit-scrollbar-thumb:hover {
+    background-color: #0056b3;
+}
+
+.newStyle_background {
+    background-color: #F8F8FA;
+}
+
+
+.continer_osint {
+    margin: 0 auto;
+    padding: 0 15px;
+    margin-bottom: 50px;
+}
+
+.main_btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 87vh;
+}
+
+.start_btn {
+    width: 30%;
+    border-radius: 20px;
+    background-color: #272822;
+    font-size: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.start_btn:hover {
+    color: #272822;
+    background-color: white;
+    box-shadow: 2px 2px #272822;
+}
+
+.desplay_felx_au {
+    display: flex !important;
+    flex-flow: row !important;
+}
+
+.title {
+    color: #28b409;
+    width: 500px;
+    text-align: left;
+    font-family: HelveticaNeueCyr;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    border-bottom: 1px solid #E8E8E8;
+    text-transform: uppercase;
+}
+
+.disablePt {
+    opacity: 0.5;
+    pointer-events: none;
+}
+
+.title-h1 {
+    flex-shrink: 0;
+    color: #000;
+
+    text-align: center;
+    font-family: HelveticaNeueCyr;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 550;
+    line-height: normal;
+    letter-spacing: 1.2px;
+    border-bottom: 1px solid #28b409;
+}
+
+.title-h2 {
+    color: #25213B;
+
+    font-family: HelveticaNeueCyr;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 550;
+    line-height: normal;
+    text-align: left;
+}
+
+.title-h2 cite {
+    color: #28b409;
+}
+
+.title-h2_r {
+    color: #25213B;
+
+    font-family: HelveticaNeueCyr;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 550;
+    line-height: normal;
+    text-align: right;
+}
+
+.title-h2_r cite {
+    color: #28b409;
+}
+
+
+.title-h2 p {
+    color: #656565;
+
+    font-family: HelveticaNeueCyr;
+    font-size: 16px;
+    font-style: italic;
+    font-weight: 300;
+    line-height: normal;
+    margin-left: 30px;
+}
+
+.label-textarea {
+    display: block;
+
+    text-align: left;
+}
+
+.text {
+    text-indent: 20px;
+    font-size: 80%;
+    text-align: left;
+    font-weight: 700;
+    font-style: italic;
+    color: #424242;
+    max-width: 98%;
+    margin: 0 auto;
+    line-height: 150%;
+    margin-bottom: 40px;
+}
+
+details[open] summary::-webkit-details-marker {
+    display: none;
+}
+
+/* Дополнительные стили для внешнего вида */
+details {
+    background-color: #FFFFFF;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin: 10px;
+}
+
+summary {
+    cursor: pointer;
+    font-weight: bold;
+    text-align: right;
+    list-style: none;
+    font-size: 14px;
+}
+
+.details-main {
+    border: 1px solid #e0e0e0;
+    border-radius: 10px;
+    padding: 15px;
+    margin: 10px 0;
+    background-color: #f8f8f8;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.details-main  .summary-main {
+    cursor: pointer;
+    font-weight: bold;
+    background-color: #f0f0f0;
+    padding: 0 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.details-main .summary-main ::-webkit-details-marker {
+    display: none;
+}
+
+.details-main p {
+    margin: 0;
+    padding: 15px 0;
+    font-size: 16px;
+    color: #333;
+}
+
+.details-main[open] .summary-main  {
+}
+
+
+.summary-main {
+    list-style: none;
+    font-size: 18px;
+    color: #28b409;
+    text-align: right;
+}
+
+
+.input {
+    width: 94%;
+    min-height: 30px;
+    font-size: 22px;
+    padding: 2px 15px;
+}
+
+
+.Osint_input {
+    margin: 10px 0;
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    line-height: 1.4;
+    color: #333;
+    transition: border-color 0.2s;
+}
+
+/* Наведение курсора на <input> */
+.Osint_input:hover {
+    border-color: #666;
+}
+
+/* Фокус на <input> */
+.Osint_input:focus {
+    border-color: #007bff;
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+/* Дополнительный стиль для <input> с ошибкой */
+.Osint_input.error {
+    border-color: #ff0000;
+}
+
+/* Пользовательский скроллбар (поддерживается в некоторых браузерах) */
+.Osint_input::-webkit-scrollbar {
+    width: 12px;
+}
+
+.Osint_input::-webkit-scrollbar-thumb {
+    background-color: #007bff;
+    border-radius: 10px;
+}
+
+.Osint_input::-webkit-scrollbar-thumb:hover {
+    background-color: #0056b3;
+}
+
+.Osint_textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    line-height: 1.4;
+    color: #333;
+    transition: border-color 0.2s;
+}
+
+/* Наведение курсора на <textarea> */
+.Osint_textarea:hover {
+    border-color: #666;
+}
+
+/* Фокус на <textarea> */
+.Osint_textarea:focus {
+    border-color: #007bff;
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+/* Дополнительный стиль для <textarea> с ошибкой */
+.Osint_textarea.error {
+    border-color: #ff0000;
+}
+
+/* Пользовательский скроллбар (поддерживается в некоторых браузерах) */
+.Osint_textarea::-webkit-scrollbar {
+    width: 12px;
+}
+
+.Osint_textarea::-webkit-scrollbar-thumb {
+    background-color: #007bff;
+    border-radius: 10px;
+}
+
+.Osint_textarea::-webkit-scrollbar-thumb:hover {
+    background-color: #0056b3;
+}
+
+.submit--btn {
+
+    left: 90%;
+    margin: 11px;
+    position: absolute;
+    display: flex;
+
+    height: 42px;
+    color: #282c34;
+    font-weight: 700;
+
+    cursor: pointer;
+    font-size: 22px;
+    padding: 8px 15px 8px;
+    border-radius: 21px;
+
+}
+
+.project_logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80px;
+    max-height: 80px;
+    margin: 0 30px 0 20px;
+}
+
+.ql-editor {
+    min-height: 500px; /* Увеличьте желаемую высоту здесь */
+}
+
+.more-link {
+    color: #272822;
+}
+
+.subtitle {
+    font-size: 27px;
+    font-weight: 700;
+    text-align: left;
+    max-width: 98%;
+    margin: 5px auto;
+    color: #9AAFA8FF;
+}
+
+.pentest_block {
+    margin: 30px 20px;
+}
+
+.hero__title {
+    text-align: start;
+    color: #9AAFA8FF;
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+.hero__subtitle {
+    line-height: 25px;
+    margin: 30px 25px;
+    text-align: left;
+    font-size: 20px;
+}
+
+.section-features__title {
+    text-align: start;
+    line-height: 20px;
+    font-size: 25px;
+    color: #9AAFA8FF;
+}
+
+.marka {
+    margin-left: 30px;
+    font-weight: 700;
+    color: #272822;
+}
+
+.devid {
+    content: "A" !important;
+    display: block !important;
+    margin-bottom: 10px !important;
+}
+
+.hero__description {
+    font-size: 18px;
+    color: #777;
+    margin-bottom: 40px;
+}
+
+/* Стили для блоков с информацией */
+.info__block {
+    margin-bottom: 40px;
+}
+
+.info__icon {
+    width: 80px;
+    height: 80px;
+    margin-bottom: 20px;
+}
+
+.info__title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.info__text {
+    font-size: 16px;
+    color: #777;
+}
+
+/* Стили для контактной формы */
+.section-contact__form {
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.section-contact__form-input,
+.section-contact__form-textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.section-contact__form-submit {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+/* Стили для футера */
+.footer__emb {
+    height: 20em;
+
+}
+
+.footer {
+    background-color: #f8f9fa;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer__text {
+
+    font-size: 14px;
+    color: #777;
+    margin-bottom: 10px;
+}
+
+.footer__social {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer__social li {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.footer__social-link {
+    color: #007bff;
+    font-size: 20px;
+}
+
+.section-features__icon {
+    margin: 0 auto;
+    max-width: 40%;
+}
+
+.osint_block {
+    padding: 30px 0;
+    margin: 0 auto;
+    max-width: 100%;
+}
+
+.osint_subtitle {
+    color: #000;
+
+    font-family: HelveticaNeueCyr;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 550;
+    line-height: normal;
+    letter-spacing: 0.6px;
+    text-transform: uppercase;
+    text-align: left;
+}
+
+.osint_sucess {
+    font-size: 22px;
+    color: green;
+    text-align: left;
+    margin: 10px 10%;
+}
+
+.osint_reject {
+    font-size: 22px;
+    color: red;
+    text-align: left;
+    margin: 10px 10%;
+}
+
+.osint_info_text {
+    font-size: 14px;
+    color: #9AAFA8FF;
+    text-align: left;
+    margin: 10px 20px;
+}
+
+.code-block {
+    background-color: #272822;
+    margin: 0 auto;
+    max-width: 100%;
+    height: 500px;
+    color: #f8f8f2;
+    padding: 10px;
+    font-family: Monaco, Consolas, "Courier New", monospace;
+    font-size: 14px;
+    line-height: 1.5;
+    border-radius: 5px;
+    overflow: auto;
+    text-align: left;
+}
+
+.info_subtitle {
+    color: #007bff;
+    text-align: left;
+    margin: 10px 0 5px 3%;
+}
+
+.btn_add--req {
+    font-family: HelveticaNeueCyr;
+    font-weight: 550;
+    cursor: pointer;
+    margin: 20px 0;
+    width: 100%;
+    height: 50px;
+    color: #555;
+    background-color: #e4fadd;
+    border: none;
+}
+
+.btn_add--add {
+    font-size: 24px;
+    cursor: pointer;
+    width: 100%;
+    height: 50px;
+    color: #555;
+    border: none;
+    background-color: #e4fadd;
+}
+
+.code_block--pentest {
+    background-color: #272822;
+    margin: 20px auto;
+    max-width: 100%;
+    color: #f8f8f2;
+    padding: 20px 10px;
+    max-height: 500px;
+    font-family: Monaco, Consolas, "Courier New", monospace;
+    font-size: 14px;
+    line-height: 1.5;
+    border-radius: 5px;
+    overflow: auto;
+    text-align: left;
+}
+
+.console_title {
+    color: chartreuse;
+}
+
+.console_text {
+    margin-left: 15px;
+}
+
+.form_pentest {
+    display: flex;
+    margin-bottom: 20px;
+    width: 100%;
+    background-color: #F8F8FA;
+}
+
+.form_pentest--osint {
+
+}
+
+input[type="file"] {
+    display: none;
+}
+
+/* Стилизуем пользовательскую кнопку загрузки */
+.button-upload {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+}
+
+.title-upload {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+/* Стилизуем текст метки */
+.label-upload {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    outline: none;
+    text-decoration: none;
+    font-size: 14px;
+    vertical-align: middle;
+    color: rgb(255 255 255);
+    text-align: center;
+    border-radius: 4px;
+    background-color: #419152;
+    line-height: 22px;
+    height: 40px;
+    padding: 10px 20px;
+    box-sizing: border-box;
+    border: none;
+    margin: 0;
+    transition: background-color 0.2s;
+}
+
+.label-upload:hover {
+    background-color: #59be6e;
+}
+
+/* Стилизуем рамку и фон для области выбора файла */
+.upload-container {
+    border: 2px dashed #007bff;
+    padding: 20px;
+    margin: 10px;
+    text-align: center;
+    height: 40vh;
+    color: #3d3939;
+    border-radius: 4px;
+    cursor: pointer;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+/* Изменяем стили, когда пользователь наводит курсор на область выбора файла */
+.upload-container:hover {
+    border-color: #007bff;
+    background-color: #f0f0f0;
+}
+
+.form_pentest--div {
+    width: 82vw;
+    padding: 0 25px;
+}
+
+
+.navbar_pentest--div {
+    width: 18vw;
+    padding: 0;
+    border-right: 1px solid #222;
+}
+
+.navbar_pentest {
+    position: sticky;
+    top: 0;
+    min-height: 2em;
+    text-align: left;
+
+}
+
+.details-terminal {
+    color: white;
+    margin: 0;
+    width: 100vw;
+    padding: 0;
+    background-color: #5c5c5c;
+}
+
+.details-terminal_osint {
+    color: white;
+    margin: 0;
+    padding: 0;
+    background-color: #5c5c5c;
+}
+
+.button_terminal--div {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 10px;
+    color: white;
+    font-weight: bold;
+    background-color: #5c5c5c;
+}
+
+.button_terminal {
+    border: none;
+    color: white;
+    background-color: #5c5c5c;
+}
+
+.summary-terminal {
+    cursor: pointer;
+    display: flex;
+    list-style: none;
+    width: 100%;
+    font-size: 18px;
+    font-weight: 400;
+    color: white;
+    text-align: left;
+    padding: 0 10px;
+    justify-content: space-between;
+}
+
+.icon_terminal {
+    background: white;
+    color: #5c5c5c;
+    padding: 1px;
+    border-radius: 3px;
+
+}
+
+.terminal_minimize {
+    padding: 0 10px;
+    font-weight: 400;
+}
+
+.span_terminal {
+    margin-right: 20px;
+    padding: 4px;
+}
+
+
+.section_h1 {
+    color: #1E2C43;
+
+    font-family: HelveticaNeueCyr;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: uppercase;
+    margin: 0;
+    padding: 4px 0;
+    background-color: #fff;
+    border-bottom: 1px solid #8B949F;
+}
+
+.section_li {
+    padding: 13px 19px;
+}
+
+.section_li:hover {
+    border-radius: 25px;
+    background: #6FD5F5;
+}
+
+.section_a:hover {
+    color: #000 !important;
+}
+
+.section_a {
+    text-decoration: none;
+    display: block;
+    color: #000;
+
+
+    font-family: HelveticaNeueCyr;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+}
+
+
+.section_title {
+    display: block;
+    text-decoration: none;
+    color: #28b409;
+
+    margin: 15px 0;
+    font-family: HelveticaNeueCyr;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: uppercase;
+}
+
+.section_subtitle {
+    text-decoration: none;
+    color: #28b409;
+    padding: 0 10px;
+    font-family: HelveticaNeueCyr;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: uppercase;
+}
+
+.section_a:hover {
+    color: #045fff;
+}
+
+.section_title:hover {
+    color: #045fff;
+}
+
+.section_ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+
+}
+
+.section_ul--main {
+    background-color: #FFFFFF;
+    padding: 4px;
+    margin: 0;
+    list-style: none;
+    overflow-y: scroll;
+    max-height: 100vh;
+    padding-bottom: 30px;
+}
+
+.section_ul .section_ul {
+    padding: 0 10px;
+    margin: 0;
+    list-style: none;
+}
+
+select {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 100%;
+    background-color: #fff;
+    color: #333;
+    outline: none;
+    cursor: pointer;
+}
+
+/* Стили для опций select */
+select option {
+    padding: 10px;
+    font-size: 16px;
+    background-color: #fff;
+    color: #333;
+    border: none;
+    outline: none;
+}
+
+/* Стили для hover опций select */
+select option:hover {
+    background-color: #f0f0f0;
+}
+
+.company_name {
+    color: #000;
+
+    font-family: HelveticaNeueCyr;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 550;
+    line-height: normal;
+    letter-spacing: 0.2px;
+    text-align: right;
+}
+
+.company_name cite {
+    color: #28b409;
+}
+
+.home_audit {
+    padding: 50px;
+    border-bottom: 1px solid #434a48;
+}
+
+.home_logo {
+
+}
+
+.header_logo {
+    height: 30px;
+    margin: 0 30px;
+}
+
+
+.project_card {
+    display: block;
+
+    background-color: #FFF;
+    margin: 10px 20px;
+}
+
+.project_title {
+    color: #000;
+    text-align: left;
+    font-family: HelveticaNeueCyr;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 550;
+    line-height: normal;
+}
+
+.project_item:nth-child(even) {
+    padding: 20px 20px;
+    border-bottom: 1px solid rgba(67, 79, 99, 0.30);
+}
+
+.project_item:nth-child(odd) {
+    padding: 20px 20px;
+    background-color: #F8F8FA;
+    border-bottom: 1px solid rgba(67, 79, 99, 0.30);
+}
+
+.project_item:hover {
+    background-color: #d5d5d5;
+}
+
+.continer_project {
+    margin: 0 30px;
+    width: 100%;
+    padding: 0 20px;
+    text-align: left;
+}
+
+.continer_project p {
+    font-size: 16px;
+    color: #555;
+    margin: 5px 20px;
+}
+
+.continer_project b {
+    color: #6c6b6b;
+}
+
+.project_h1 {
+    font-size: 24px;
+    color: #333;
+    margin: 20px 0 20px;
+}
+
+.project_h2 {
+    font-family: HelveticaNeueCyr;
+    font-size: 14px;
+    font-weight: 550;
+    line-height: 14px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #25213B;
+
+}
+.project_p {
+    font-family: HelveticaNeueCyr;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 14px;
+    letter-spacing: 0.05em;
+    text-align: left;
+    color: #848484;
+
+
+}
+
+.project_arr--item {
+    cursor: pointer !important;
+    padding: 20px;
+    margin: 10px;
+    color: #555;
+    text-align: left;
+    border-color: #007bff;
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+.project_arr--item p {
+    margin: 0 15px;
+    padding: 0 15px;
+    font-size: 16px;
+    color: #555;
+}
+
+.project_outlet {
+    min-height: 500px;
+    max-height: 600px;
+    background-color: white;
+    overflow-y: scroll;
+    padding: 20px 20px;
+    margin: 20px;
+    text-align: center;
+}
+
+.project_outlet_btn {
+    cursor: pointer !important;
+}
+
+.project_outlet_btn:hover {
+    color: #28b409 !important;
+}
+
+.metodology_sub {
+    color: #000;
+    text-align: center;
+    font-family: HelveticaNeueCyr;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 550;
+    border: none;
+    background-color: rgb(0 0 0 / 0%);
+}
+
+.metodology_add {
+    color: #000;
+    text-align: center;
+    font-family: HelveticaNeueCyr;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 550;
+    width: 100%;
+    border: none;
+    background-color: white;
+    text-align: center;
+}
+
+.company-container {
+    text-align: left;
+    background-color: #f0f0f0;
+    padding: 20px;
+    border-radius: 5px;
+    margin: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.company-info h2 {
+    font-size: 24px;
+    margin: 10px 0;
+}
+
+.company-sec{
+    margin: 20px 10px;
+    border-bottom: 1px solid #555;
+}
+
+.pentest-section,
+.osint-section {
+    margin-top: 20px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #fff;
+}
+
+.pentest-section h3,
+.osint-section h3 {
+    font-size: 20px;
+    margin: 10px 0;
+}
+
+.pentest-section p,
+.osint-section p {
+    font-size: 16px;
+    margin: 5px 0;
+}
+
+
+.form_osint--div {
+    width: 100vw;
+    padding: 0 10px;
+}

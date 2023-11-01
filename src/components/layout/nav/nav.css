@@ -1,0 +1,42 @@
+.aside {
+  max-width: 200px;
+  height: 100%; }
+.aside ul {
+  list-style: none; }
+.aside li {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 26px; }
+.aside a {
+  cursor: pointer;
+  color: #000000;
+  text-decoration: none;}
+.aside a:hover {
+  color: gray; }
+.aside .filter + .filter {
+  margin-top: 40px; }
+.aside .filter {
+  margin-top: 10px; }
+.aside .filter h1 {
+  color: #000000;
+  min-width: 160px;
+  font-size: 20px;
+  line-height: 24px;
+  text-align: left;
+  margin-bottom: 16px; }
+
+.submit{
+  border: 3px solid #03042D;
+  border-radius: 20px;
+  background-color: white;
+  color: #03042D;
+  cursor: pointer;
+  width: 130px;
+  margin: 10px 30px 40px;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 20px;
+  padding: 2px 5px;
+}
