@@ -82,7 +82,7 @@ const Proceduritem = (props) => {
 
     return (
         <div className={'newStyle_container'}>
-            <h2 className={"title-h1"}>Политика безопасности.</h2>
+            <h2 className={"title-h1"}>Процедуры.</h2>
             <h3 className={"osint_subtitle"}>Заголовок:</h3>
             <input
                 className={"Osint_input"}
